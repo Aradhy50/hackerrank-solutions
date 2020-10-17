@@ -1,0 +1,21 @@
+
+#include<stdio.h>
+int main()
+{ int i,j,n1,n2,a[15],b[15],c[15],q=0;
+ printf("Enter the number of First array elements");
+ scanf("%d",&n1);
+ printf("Enter the number of Second array elements");
+ scanf("%d",&n2);
+ printf("First Array\n");
+ for(i=0;i<n1;i++)
+ {scanf("%d",&a[i]);}
+ printf("Second Array\n");
+ for(j=0;j<n2;j++)
+ {  scanf("%d",&b[j]);}
+ for(i=0;i<n1;i++)
+ {  for(j=0;j<n2;j++)
+  {   if(a[i]==b[j])
+   {    c[i]=a[i];}}}
+ printf("Answer Numbers which are in both\n");
+ for(i=0;i<n1 || i<n2;i++)
+ {printf("%d ",c[i]);}}
